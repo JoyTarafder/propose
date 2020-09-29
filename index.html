@@ -8,12 +8,14 @@
 </head>
 <body>
     <h1 id="message"> Will you be my life partner 💞 ?</h1>
-    <button onclick="propose()">Yes</button>
-    <button onclick="propose()">Of course, yes</button>
+    <button onclick="propose()" id="btn">Yes</button>
+    <button onclick="propose()" id="btn2">Of course, yes</button>
     <script>
         const propose = () => {
             const mgs =' I Love You ❤️❤️❤️ ';
             document.getElementById('message').innerText = mgs;
+            document.getElementById('btn').style.display= "none";
+            document.getElementById('btn2').style.display= "none";
         }
     </script>
 </body>
