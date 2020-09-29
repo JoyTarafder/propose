@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 id="message">Will you be my life partner 💞 ?</h1>
+    <h1 id="message"> Will you be my life partner 💞 ?</h1>
     <button onclick="propose()">Yes</button>
     <button onclick="propose()">Of course, yes</button>
     <script>
-        function propose(){
-            var mgs =' I Love You ❤️❤️❤️ ';
+        const propose = () => {
+            const mgs =' I Love You ❤️❤️❤️ ';
             document.getElementById('message').innerText = mgs;
+            document.getElementById('mgs').style.color = "blue";
         }
     </script>
 </body>
